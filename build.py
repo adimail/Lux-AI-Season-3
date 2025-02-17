@@ -1,4 +1,7 @@
+import os
 import json
+
+os.makedirs("./build", exist_ok=True)
 
 with open("replay.json", "r") as file:
     json_data = json.load(file)
@@ -25,5 +28,5 @@ html_template = f"""
 </html>
 """
 
-with open("index.html", "w") as file:
+with open("./build/index.html", "w") as file:
     file.write(html_template)
