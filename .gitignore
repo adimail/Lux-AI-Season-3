@@ -3,3 +3,4 @@ __pycache__/
 *.html
 .DS_Store
 *.gz
+replay.json
